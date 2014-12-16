@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="hibernate" extends="struts-default">
+
+		<action name="savePerson" class="com.qiheng.action.PersonAction" method="savePerson">
+				<result name="success">/queryAll.jsp</result>
+		</action>
+		
+		<action name="deletePerson" class="com.qiheng.action.PersonAction" method="deletePerson">
+				<result name="success">/queryAll.jsp</result>
+		</action>
+		
+		<action name="queryPerson" class="com.qiheng.action.PersonAction" method="queryPerson">
+				<result name="success">/queryPerson.jsp</result>
+		</action>
+			
+		<action name="updatePerson" class="com.qiheng.action.PersonAction" method="queryPerson">
+				<result name="success">/updatePerson.jsp</result>
+		</action>
+		
+		<action name="updatePerson2" class="com.qiheng.action.PersonAction" method="updatePerson">
+				<result name="success">/queryAll.jsp</result>
+		</action>
+		
+	</package>
+
+
+</struts>
